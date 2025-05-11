@@ -13,11 +13,11 @@ export default function Header() {
     }
 
     return (
-        <header className="bg-background border-b h-[20%]">
+        <header className="bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
-                        <Link href="/" className="text-xl font-bold">
+                        <Link href="/" className="text-xl font-bold ml-2">
                             Todo App
                         </Link>
                     </div>
@@ -35,7 +35,7 @@ export default function Header() {
                     {/* Mobile menu button */}
                     <div className="md:hidden">
                         <Button variant="ghost" size="icon" onClick={toggleMenu}>
-                            {isMenuOpen ? <X className="h-6 w-6"/> : <Menu className="h-6 w-6"/>}
+                            {isMenuOpen ? <X className="h-6 w-6"/> : <Menu className="h-6 w-6 mr-2" />}
                         </Button>
                     </div>
                 </div>

@@ -52,7 +52,7 @@ export default function TodoApp() {
   })
 
   return (
-      <div className="max-w-md mx-auto p-6">
+      <div className="max-w-md mx-auto p-6 bg-background rounded-md space-y-6 align-middle">
 
         <div className="flex mb-4">
           <Input
