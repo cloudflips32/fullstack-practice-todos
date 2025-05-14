@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { CustomCheckbox } from "@/components/ui/custom-checkbox"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Trash2, Plus } from "lucide-react"
 
 // Todo interface
@@ -92,7 +92,7 @@ export default function TodoApp() {
               filteredTodos.map((todo) => (
                   <div key={todo.id} className="flex items-center justify-between p-3 border rounded-md">
                     <div className="flex items-center space-x-3">
-                      <CustomCheckbox
+                      <Checkbox
                           id={`todo-${todo.id}`}
                           checked={todo.completed}
                           onCheckedChange={() => toggleTodo(todo.id)}
